@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply border;
+  @apply border-solid;
+  @apply border-purple-200;
+  /* @apply rounded-md; */
+  @apply px-4;
+  @apply py-2;
+}
+
+.logo {
+  background-image: url("/ailogo1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 520px;
+  /* adjust as needed */
+  height: 90px;
+  /* adjust as needed */
+  filter: brightness(1.2);
+}
+
+@media (max-width: 639px) { /* adjust breakpoint as needed */
+  .logo {
+    width: 369px; /* adjust as needed */
+    height: 50px; /* adjust as needed */
+  }
+}
+
+
+.main_bg_ai {
+  background-image: url("/bg 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+   /* height: 100vh;  */
+}
+
+
+
+
+
+.border-hairline {
+  @apply border border-yellow-300 border-opacity-10;
+}
+
+.lil-button {
+  @apply inline-block;
+  @apply text-lg;
+  @apply text-yellow-300;
+  @apply rounded-md;
+  @apply py-2;
+  @apply mx-3;
+}
+
+.lil-text {
+  @apply text-sm;
+  @apply text-yellow-300;
+}
+
+.lil-text a {
+  @apply text-yellow-300;
+  @apply underline;
+}
+
+.icon {
+  @apply inline relative mr-1;
+  top: -0.1em;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.prose {
+  @apply mt-8;
+  @apply text-lg;
+  @apply text-yellow-500;
+  @apply leading-7;
+}
+
+.prose a {
+  @apply text-yellow-600;
+  @apply underline;
+}
