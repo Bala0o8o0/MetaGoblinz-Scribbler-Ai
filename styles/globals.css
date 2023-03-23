@@ -22,10 +22,14 @@ input {
   filter: brightness(1.2);
 }
 
-@media (max-width: 639px) { /* adjust breakpoint as needed */
+@media (max-width: 639px) {
+
+  /* adjust breakpoint as needed */
   .logo {
-    width: 369px; /* adjust as needed */
-    height: 50px; /* adjust as needed */
+    width: 369px;
+    /* adjust as needed */
+    height: 50px;
+    /* adjust as needed */
   }
 }
 
@@ -35,7 +39,7 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-   /* height: 100vh;  */
+  /* height: 100vh;  */
 }
 
 

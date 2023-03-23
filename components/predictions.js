@@ -70,12 +70,15 @@ export function Prediction({ prediction, showLinkToNewScribble = false }) {
     <div className="mt-6 mb-12  ">
       <div className="shadow-lg border my-5 p-5 bg-transparent rounded-xl flex">
         <div className="w-1/2 aspect-square relative ">
-          <img
-            src={prediction.input.image}
-            alt="input scribble"
-            className="w-full aspect-square"
-          />
+          {prediction?.input?.image && (
+            <img
+              src={prediction.input.image}
+              alt="input scribble"
+              className="w-full aspect-square"
+            />
+          )}
         </div>
+
         <div className="w-1/2 aspect-square relative">
           {prediction.output?.length ? (
             <img
@@ -91,8 +94,9 @@ export function Prediction({ prediction, showLinkToNewScribble = false }) {
         </div>
       </div>
       <div className="text-center px-4 text-amber-400 text-2xl font-extrabold opacity-100 ">
-        &ldquo;{prediction.input.prompt}&rdquo;
+        {prediction.input && <>&ldquo;{prediction.input.prompt}&rdquo;</>}
       </div>
+
       {/* <div className="text-center py-2">
         <button className="lil-button" onClick={copyLink}>
           <CopyIcon className="icon" />
